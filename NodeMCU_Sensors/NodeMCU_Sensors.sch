@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:NodeMCU_Sensors-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -36,10 +37,10 @@ F 3 "~" H 1700 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 J3
+L Connector_Generic:Conn_01x04 OLED1
 U 1 1 5A69B21D
 P 3450 1450
-F 0 "J3" V 3416 1162 50  0000 R CNN
+F 0 "OLED1" V 3416 1162 50  0000 R CNN
 F 1 "Conn_01x04" V 3325 1162 50  0000 R CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3450 1450 50  0001 C CNN
 F 3 "~" H 3450 1450 50  0001 C CNN
@@ -47,10 +48,10 @@ F 3 "~" H 3450 1450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 J4
+L Connector_Generic:Conn_01x04 MPU6050
 U 1 1 5A69B28D
 P 3450 2100
-F 0 "J4" V 3416 1812 50  0000 R CNN
+F 0 "MPU6050" V 3416 1812 50  0000 R CNN
 F 1 "Conn_01x04" V 3325 1812 50  0000 R CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3450 2100 50  0001 C CNN
 F 3 "~" H 3450 2100 50  0001 C CNN
@@ -58,10 +59,10 @@ F 3 "~" H 3450 2100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Specialized:Audio-Jack-3_2Switches J6
+L Connector_Specialized:Audio-Jack-3_2Switches 1wire2
 U 1 1 5A69B495
 P 5650 1650
-F 0 "J6" H 5626 2075 50  0000 C CNN
+F 0 "1wire2" H 5626 2075 50  0000 C CNN
 F 1 "Audio-Jack-3_2Switches" H 5626 1984 50  0000 C CNN
 F 2 "Connector_Audio:Jack_3.5mm_PJ320E_Horizontal" H 5900 1750 50  0001 C CNN
 F 3 "~" H 5900 1750 50  0001 C CNN
@@ -69,10 +70,10 @@ F 3 "~" H 5900 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Specialized:Audio-Jack-3_2Switches J7
+L Connector_Specialized:Audio-Jack-3_2Switches 1wire1
 U 1 1 5A69B507
 P 5650 2450
-F 0 "J7" H 5626 2875 50  0000 C CNN
+F 0 "1wire1" H 5626 2875 50  0000 C CNN
 F 1 "Audio-Jack-3_2Switches" H 5626 2784 50  0000 C CNN
 F 2 "Connector_Audio:Jack_3.5mm_PJ320E_Horizontal" H 5900 2550 50  0001 C CNN
 F 3 "~" H 5900 2550 50  0001 C CNN
@@ -80,10 +81,10 @@ F 3 "~" H 5900 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Specialized:Audio-Jack-3_2Switches J8
+L Connector_Specialized:Audio-Jack-3_2Switches Analog1
 U 1 1 5A69B5CA
 P 5650 3250
-F 0 "J8" H 5626 3675 50  0000 C CNN
+F 0 "Analog1" H 5626 3675 50  0000 C CNN
 F 1 "Audio-Jack-3_2Switches" H 5626 3584 50  0000 C CNN
 F 2 "Connector_Audio:Jack_3.5mm_PJ320E_Horizontal" H 5900 3350 50  0001 C CNN
 F 3 "~" H 5900 3350 50  0001 C CNN
@@ -91,10 +92,10 @@ F 3 "~" H 5900 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 J5
+L Connector_Generic:Conn_01x04 SIL1
 U 1 1 5A69B67B
 P 3450 2800
-F 0 "J5" V 3416 2512 50  0000 R CNN
+F 0 "SIL1" V 3416 2512 50  0000 R CNN
 F 1 "Conn_01x04" V 3325 2512 50  0000 R CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3450 2800 50  0001 C CNN
 F 3 "~" H 3450 2800 50  0001 C CNN
@@ -107,7 +108,7 @@ U 1 1 5A69B97F
 P 7850 1500
 F 0 "SW1" H 7850 1785 50  0000 C CNN
 F 1 "SW_Push" H 7850 1694 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 7850 1700 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx39-2LFS" H 7850 1700 50  0001 C CNN
 F 3 "" H 7850 1700 50  0001 C CNN
 	1    7850 1500
 	1    0    0    -1  
