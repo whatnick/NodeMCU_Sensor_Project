@@ -20,7 +20,7 @@ U 1 1 5A6965CA
 P 1700 2150
 F 0 "J1" H 1750 3067 50  0000 C CNN
 F 1 "Conn_02x15_Odd_Even" H 1750 2976 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x15_P2.54mm_Vertical" H 1700 2150 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_2x15_Pitch2.54mm" H 1700 2150 50  0001 C CNN
 F 3 "~" H 1700 2150 50  0001 C CNN
 	1    1700 2150
 	1    0    0    -1  
@@ -31,7 +31,7 @@ U 1 1 5A696606
 P 1700 3950
 F 0 "J2" H 1750 4867 50  0000 C CNN
 F 1 "Conn_02x15_Odd_Even" H 1750 4776 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x15_P2.54mm_Vertical" H 1700 3950 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_2x15_Pitch2.54mm" H 1700 3950 50  0001 C CNN
 F 3 "~" H 1700 3950 50  0001 C CNN
 	1    1700 3950
 	1    0    0    -1  
@@ -42,7 +42,7 @@ U 1 1 5A69B21D
 P 3450 1450
 F 0 "OLED1" V 3416 1162 50  0000 R CNN
 F 1 "Conn_01x04" V 3325 1162 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3450 1450 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm" H 3450 1450 50  0001 C CNN
 F 3 "~" H 3450 1450 50  0001 C CNN
 	1    3450 1450
 	0    -1   -1   0   
@@ -50,13 +50,13 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 MPU6050
 U 1 1 5A69B28D
-P 3450 2100
-F 0 "MPU6050" V 3416 1812 50  0000 R CNN
-F 1 "Conn_01x04" V 3325 1812 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3450 2100 50  0001 C CNN
-F 3 "~" H 3450 2100 50  0001 C CNN
-	1    3450 2100
-	0    -1   -1   0   
+P 3550 2400
+F 0 "MPU6050" V 3516 2112 50  0000 R CNN
+F 1 "Conn_01x04" V 3425 2112 50  0000 R CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm" H 3550 2400 50  0001 C CNN
+F 3 "~" H 3550 2400 50  0001 C CNN
+	1    3550 2400
+	0    1    1    0   
 $EndComp
 $Comp
 L Connector_Specialized:Audio-Jack-3_2Switches 1wire2
@@ -92,15 +92,15 @@ F 3 "~" H 5900 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 SIL1
+L Connector_Generic:Conn_01x04 SHT21
 U 1 1 5A69B67B
-P 3450 2800
-F 0 "SIL1" V 3416 2512 50  0000 R CNN
-F 1 "Conn_01x04" V 3325 2512 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3450 2800 50  0001 C CNN
-F 3 "~" H 3450 2800 50  0001 C CNN
-	1    3450 2800
-	0    -1   -1   0   
+P 3600 3050
+F 0 "SHT21" V 3566 2762 50  0000 R CNN
+F 1 "Conn_01x04" V 3475 2762 50  0000 R CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm" H 3600 3050 50  0001 C CNN
+F 3 "~" H 3600 3050 50  0001 C CNN
+	1    3600 3050
+	0    1    1    0   
 $EndComp
 $Comp
 L Switch:SW_Push SW1
@@ -304,4 +304,32 @@ Text GLabel 2000 3350 2    50   Input ~ 0
 D1
 Text GLabel 2000 3250 2    50   Input ~ 0
 D0
+Text Notes 3300 1100 0    50   ~ 0
+D1 - SCL\nD2 - SDA
+Text GLabel 3350 1650 3    50   Input ~ 0
+3V3
+Text GLabel 3450 1650 3    50   Input ~ 0
+GND
+Text GLabel 3550 1650 3    50   Input ~ 0
+D1
+Text GLabel 3650 1650 3    50   Input ~ 0
+D2
+Text Notes 2900 850  0    50   ~ 0
+i2c bus devices with 4-pin headers
+Text GLabel 3350 2200 1    50   Input ~ 0
+3V3
+Text GLabel 3450 2200 1    50   Input ~ 0
+GND
+Text GLabel 3550 2200 1    50   Input ~ 0
+D1
+Text GLabel 3650 2200 1    50   Input ~ 0
+D2
+Text GLabel 3400 2850 1    50   Input ~ 0
+3V3
+Text GLabel 3500 2850 1    50   Input ~ 0
+GND
+Text GLabel 3600 2850 1    50   Input ~ 0
+D1
+Text GLabel 3700 2850 1    50   Input ~ 0
+D2
 $EndSCHEMATC
