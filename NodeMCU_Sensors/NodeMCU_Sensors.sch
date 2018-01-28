@@ -119,7 +119,7 @@ L pspice:R R1
 U 1 1 5A69BB4C
 P 6550 2000
 F 0 "R1" H 6618 2046 50  0000 L CNN
-F 1 "R" H 6618 1955 50  0000 L CNN
+F 1 "4.7K" H 6618 1955 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 6550 2000 50  0001 C CNN
 F 3 "" H 6550 2000 50  0001 C CNN
 	1    6550 2000
@@ -335,12 +335,10 @@ Text GLabel 3700 2850 1    50   Input ~ 0
 D2
 Text GLabel 5450 3350 3    50   Input ~ 0
 GND
-Text GLabel 5850 3250 2    50   Input ~ 0
-A0
 Text GLabel 5850 2350 2    50   Input ~ 0
 D6
 Text GLabel 5450 2550 3    50   Input ~ 0
-D8
+GND
 Text GLabel 5850 2450 2    50   Input ~ 0
 D7
 Text GLabel 5850 1550 2    50   Input ~ 0
@@ -348,7 +346,7 @@ D6
 Text GLabel 5850 1650 2    50   Input ~ 0
 D7
 Text GLabel 5450 1750 3    50   Input ~ 0
-D8
+GND
 Text Notes 4950 3700 0    50   ~ 0
 Analog input (max 1V without divider)
 Text Notes 5000 1050 0    50   ~ 0
@@ -357,4 +355,42 @@ Text GLabel 8050 1500 2    50   Input ~ 0
 D5
 Text GLabel 7650 1500 0    50   Input ~ 0
 GND
+Text GLabel 6550 1750 1    50   Input ~ 0
+D6
+Text GLabel 6550 2250 3    50   Input ~ 0
+D7
+$Comp
+L Device:R R3
+U 1 1 5A6DB795
+P 6300 3450
+F 0 "R3" V 6093 3450 50  0000 C CNN
+F 1 "10K" V 6184 3450 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6230 3450 50  0001 C CNN
+F 3 "" H 6300 3450 50  0001 C CNN
+	1    6300 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5A6DB7DB
+P 5950 3450
+F 0 "R2" V 5743 3450 50  0000 C CNN
+F 1 "39K" V 5834 3450 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5880 3450 50  0001 C CNN
+F 3 "" H 5950 3450 50  0001 C CNN
+	1    5950 3450
+	0    1    1    0   
+$EndComp
+Text GLabel 6450 3450 2    50   Input ~ 0
+GND
+Wire Wire Line
+	6100 3450 6150 3450
+Wire Wire Line
+	5800 3450 5800 3300
+Wire Wire Line
+	5800 3300 5850 3300
+Wire Wire Line
+	5850 3300 5850 3250
+Text GLabel 6100 3450 1    50   Input ~ 0
+A0
 $EndSCHEMATC
