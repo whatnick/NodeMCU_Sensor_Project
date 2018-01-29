@@ -348,7 +348,7 @@ D7
 Text GLabel 5450 1750 3    50   Input ~ 0
 GND
 Text Notes 4950 3700 0    50   ~ 0
-Analog input (max 1V without divider)
+Analog input (max 3.3V with divider)
 Text Notes 5000 1050 0    50   ~ 0
 1-wire protocol with programmable pinout
 Text GLabel 8050 1500 2    50   Input ~ 0
@@ -362,35 +362,31 @@ D7
 $Comp
 L Device:R R3
 U 1 1 5A6DB795
-P 6300 3450
-F 0 "R3" V 6093 3450 50  0000 C CNN
-F 1 "10K" V 6184 3450 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6230 3450 50  0001 C CNN
-F 3 "" H 6300 3450 50  0001 C CNN
-	1    6300 3450
+P 6350 3150
+F 0 "R3" V 6143 3150 50  0000 C CNN
+F 1 "10K" V 6234 3150 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6280 3150 50  0001 C CNN
+F 3 "" H 6350 3150 50  0001 C CNN
+	1    6350 3150
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R2
 U 1 1 5A6DB7DB
-P 5950 3450
-F 0 "R2" V 5743 3450 50  0000 C CNN
-F 1 "39K" V 5834 3450 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5880 3450 50  0001 C CNN
-F 3 "" H 5950 3450 50  0001 C CNN
-	1    5950 3450
+P 6000 3150
+F 0 "R2" V 5793 3150 50  0000 C CNN
+F 1 "23.2K" V 5884 3150 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5930 3150 50  0001 C CNN
+F 3 "" H 6000 3150 50  0001 C CNN
+	1    6000 3150
 	0    1    1    0   
 $EndComp
-Text GLabel 6450 3450 2    50   Input ~ 0
+Text GLabel 6500 3150 2    50   Input ~ 0
 GND
 Wire Wire Line
-	6100 3450 6150 3450
-Wire Wire Line
-	5800 3450 5800 3300
-Wire Wire Line
-	5800 3300 5850 3300
-Wire Wire Line
-	5850 3300 5850 3250
-Text GLabel 6100 3450 1    50   Input ~ 0
+	6150 3150 6200 3150
+Text GLabel 6150 3150 1    50   Input ~ 0
 A0
+Text GLabel 5850 3250 2    50   Input ~ 0
+3V3
 $EndSCHEMATC

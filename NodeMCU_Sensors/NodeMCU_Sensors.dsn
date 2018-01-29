@@ -21,9 +21,11 @@
       )
     )
     (boundary
-      (path pcb 0  165100 -104140  93980 -104140  93980 -63500  165100 -63500
-            165100 -104140)
+      (path pcb 0  165100 -64262  165100 -103378  164338 -104140  94742 -104140
+            93980 -103378  93980 -64262  94742 -63500  164338 -63500  165100 -64262)
     )
+    (plane GND (polygon F.Cu 0  93980 -63500  165100 -63500  165100 -104140  93980 -104140))
+    (plane GND (polygon B.Cu 0  93980 -63500  165100 -63500  165100 -104140  93980 -104140))
     (via "Via[0-1]_800:400_um")
     (rule
       (width 250)
@@ -37,7 +39,7 @@
       (place R3 109474 -70358 front 90 (PN 10K))
     )
     (component Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal::1
-      (place R2 113792 -65278 front 270 (PN 39K))
+      (place R2 113792 -65278 front 270 (PN 23.2K))
     )
     (component Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm
       (place SHT21 162560 -101600 front 270 (PN Conn_01x04))
@@ -398,7 +400,7 @@
         J1-19 SW1-1 Analog1-3 1wire2-3 1wire1-3)
     )
     (net 3V3
-      (pins SHT21-4 OLED1-1 MPU6050-4 J2-11 J2-12 J2-29 J2-30 J1-22 J1-21)
+      (pins SHT21-4 OLED1-1 MPU6050-4 J2-11 J2-12 J2-29 J2-30 J1-22 J1-21 Analog1-1)
     )
     (net EN
       (pins J1-24 J1-23)
@@ -449,14 +451,10 @@
       (pins J1-6 J1-5)
     )
     (net "Net-(Analog1-Pad2)"
-      (pins Analog1-2)
-    )
-    (net "Net-(Analog1-Pad1)"
-      (pins R2-2 Analog1-1)
+      (pins R2-2 Analog1-2)
     )
     (class kicad_default "" A0 CLK CMD D0 D1 D2 D3 D4 D5 D8 EDS EN "Net-(Analog1-Pad1)"
-      "Net-(Analog1-Pad2)" "Net-(R1-Pad1)" "Net-(R1-Pad2)" RST RSV1 RSV2 RX
-      SD0 SD1 SD2 TX
+      "Net-(Analog1-Pad2)" RST RSV1 RSV2 RX SD0 SD1 SD2 TX
       (circuit
         (use_via Via[0-1]_800:400_um)
       )
