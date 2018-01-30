@@ -389,4 +389,26 @@ Text GLabel 6150 3150 1    50   Input ~ 0
 A0
 Text GLabel 5850 3250 2    50   Input ~ 0
 3V3
+$Comp
+L makeSmart_logo:LOGO G1
+U 1 1 5A705986
+P 7300 3850
+F 0 "G1" H 7300 3794 60  0001 C CNN
+F 1 "LOGO" H 7300 3906 60  0001 C CNN
+F 2 "project_footprints:makeSmart_logo" H 7300 3850 50  0001 C CNN
+F 3 "" H 7300 3850 50  0001 C CNN
+	1    7300 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small G2
+U 1 1 5A7068A1
+P 8250 3900
+F 0 "G2" H 8250 4175 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 8250 3675 50  0001 C CNN
+F 2 "Symbols:OSHW-Logo2_7.3x6mm_SilkScreen" H 8250 3900 50  0001 C CNN
+F 3 "~" H 8250 3900 50  0001 C CNN
+	1    8250 3900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
