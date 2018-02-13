@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 360)
+    (start_pass_no 490)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -75,7 +75,7 @@
   (class "kicad_default"
     A0 EDS SD2 SD1 CMD SD0 CLK EN
     RST TX RX D8 D5 D4 D3 D2
-    D1 D0 RSV1 RSV2 "Net-(Analog1-Pad2)"
+    D1 D0 RSV1 RSV2 "Net-(Analog1-Pad3)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule

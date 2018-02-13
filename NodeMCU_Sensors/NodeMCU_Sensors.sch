@@ -93,13 +93,14 @@ F 3 "~" H 5900 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 SHT21
+L Connector_Generic:Conn_01x04 Temperature1
 U 1 1 5A69B67B
 P 3600 3050
-F 0 "SHT21" V 3566 2762 50  0000 R CNN
+F 0 "Temperature1" V 3566 2762 50  0000 R CNN
 F 1 "Conn_01x04" V 3475 2762 50  0000 R CNN
 F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm" H 3600 3050 50  0001 C CNN
 F 3 "~" H 3600 3050 50  0001 C CNN
+F 4 " " H 3600 3050 50  0001 C CNN "manf#"
 	1    3600 3050
 	0    1    1    0   
 $EndComp
@@ -120,7 +121,7 @@ U 1 1 5A69BB4C
 P 6550 2000
 F 0 "R1" H 6618 2046 50  0000 L CNN
 F 1 "4.7K" H 6618 1955 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 6550 2000 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 6550 2000 50  0001 C CNN
 F 3 "" H 6550 2000 50  0001 C CNN
 	1    6550 2000
 	1    0    0    -1  
@@ -333,8 +334,6 @@ Text GLabel 3600 2850 1    50   Input ~ 0
 D1
 Text GLabel 3700 2850 1    50   Input ~ 0
 D2
-Text GLabel 5450 3350 3    50   Input ~ 0
-GND
 Text GLabel 5850 2350 2    50   Input ~ 0
 D6
 Text GLabel 5450 2550 3    50   Input ~ 0
@@ -359,33 +358,7 @@ Text GLabel 6550 1750 1    50   Input ~ 0
 D6
 Text GLabel 6550 2250 3    50   Input ~ 0
 D7
-$Comp
-L Device:R R3
-U 1 1 5A6DB795
-P 6350 3150
-F 0 "R3" V 6143 3150 50  0000 C CNN
-F 1 "10K" V 6234 3150 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6280 3150 50  0001 C CNN
-F 3 "" H 6350 3150 50  0001 C CNN
-	1    6350 3150
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5A6DB7DB
-P 6000 3150
-F 0 "R2" V 5793 3150 50  0000 C CNN
-F 1 "23.2K" V 5884 3150 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5930 3150 50  0001 C CNN
-F 3 "" H 6000 3150 50  0001 C CNN
-	1    6000 3150
-	0    1    1    0   
-$EndComp
-Text GLabel 6500 3150 2    50   Input ~ 0
-GND
-Wire Wire Line
-	6150 3150 6200 3150
-Text GLabel 6150 3150 1    50   Input ~ 0
+Text GLabel 5850 3150 2    50   Input ~ 0
 A0
 Text GLabel 5850 3250 2    50   Input ~ 0
 3V3

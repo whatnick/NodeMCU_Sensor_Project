@@ -21,11 +21,11 @@
       )
     )
     (boundary
-      (path pcb 0  165100 -64262  165100 -103378  164338 -104140  94742 -104140
-            93980 -103378  93980 -64262  94742 -63500  164338 -63500  165100 -64262)
+      (path pcb 0  165100 -59182  165100 -105918  164338 -106680  94742 -106680
+            93980 -105918  93980 -59182  94742 -58420  164338 -58420  165100 -59182)
     )
-    (plane GND (polygon F.Cu 0  93980 -63500  165100 -63500  165100 -104140  93980 -104140))
-    (plane GND (polygon B.Cu 0  93980 -63500  165100 -63500  165100 -104140  93980 -104140))
+    (plane GND (polygon F.Cu 0  93980 -58420  165100 -58420  165354 -106680  93980 -106680))
+    (plane GND (polygon B.Cu 0  93980 -58420  165100 -58420  165100 -106680  93980 -106680))
     (via "Via[0-1]_800:400_um")
     (rule
       (width 250)
@@ -35,69 +35,49 @@
     )
   )
   (placement
-    (component Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal
-      (place R3 109474 -70358 front 90 (PN 10K))
-    )
-    (component Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal::1
-      (place R2 113792 -65278 front 270 (PN 23.2K))
+    (component Resistors_SMD:R_0603_HandSoldering
+      (place R1 158834 -63500 front 180 (PN 4.7K))
     )
     (component Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm
-      (place SHT21 162560 -101600 front 270 (PN Conn_01x04))
-      (place MPU6050 137414 -101600 front 270 (PN Conn_01x04))
+      (place Temperature1 162560 -104140 front 270 (PN Conn_01x04))
+      (place MPU6050 137414 -104140 front 270 (PN Conn_01x04))
+    )
+    (component "Symbols:OSHW-Logo2_7.3x6mm_SilkScreen"
+      (place G2 111252 -92456 back 0 (PN Logo_Open_Hardware_Small))
+      (place G1 111506 -81026 back 0 (PN LOGO))
     )
     (component Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm::1
-      (place OLED1 141732 -65532 front 90 (PN Conn_01x04))
+      (place OLED1 141732 -60960 front 90 (PN Conn_01x04))
     )
     (component Socket_Strips:Socket_Strip_Straight_2x15_Pitch2.54mm
-      (place J2 125476 -66040 front 0 (PN Conn_02x15_Odd_Even))
+      (place J2 125476 -64770 front 0 (PN Conn_02x15_Odd_Even))
     )
     (component Socket_Strips:Socket_Strip_Straight_2x15_Pitch2.54mm::1
-      (place J1 100076 -66040 front 0 (PN Conn_02x15_Odd_Even))
+      (place J1 100076 -64770 front 0 (PN Conn_02x15_Odd_Even))
     )
     (component "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx39-2LFS"
       (place SW1 162306 -88392 front 270 (PN SW_Push))
     )
     (component Connector_Audio:Jack_3.5mm_PJ320E_Horizontal
-      (place Analog1 130556 -72898 front 0 (PN "Audio-Jack-3_2Switches"))
-      (place 1wire2 155702 -68580 front 270 (PN "Audio-Jack-3_2Switches"))
-      (place 1wire1 155814 -77978 front 270 (PN "Audio-Jack-3_2Switches"))
-    )
-    (component Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal
-      (place R1 160020 -65278 front 180 (PN 4.7K))
+      (place Analog1 130556 -67818 front 0 (PN "Audio-Jack-3_2Switches"))
+      (place 1wire2 155702 -68072 front 270 (PN "Audio-Jack-3_2Switches"))
+      (place 1wire1 155702 -77978 front 270 (PN "Audio-Jack-3_2Switches"))
     )
   )
   (library
-    (image Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal
-      (outline (path signal 100  740 800  740 -800))
-      (outline (path signal 100  740 -800  4340 -800))
-      (outline (path signal 100  4340 -800  4340 800))
-      (outline (path signal 100  4340 800  740 800))
-      (outline (path signal 100  0 0  740 0))
-      (outline (path signal 100  5080 0  4340 0))
-      (outline (path signal 120  680 860  4400 860))
-      (outline (path signal 120  680 -860  4400 -860))
-      (outline (path signal 50  -950 1150  -950 -1150))
-      (outline (path signal 50  -950 -1150  6050 -1150))
-      (outline (path signal 50  6050 -1150  6050 1150))
-      (outline (path signal 50  6050 1150  -950 1150))
-      (pin Round[A]Pad_1400_um 1 0 0)
-      (pin Oval[A]Pad_1400x1400_um 2 5080 0)
-    )
-    (image Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal::1
-      (outline (path signal 50  6050 1150  -950 1150))
-      (outline (path signal 50  6050 -1150  6050 1150))
-      (outline (path signal 50  -950 -1150  6050 -1150))
-      (outline (path signal 50  -950 1150  -950 -1150))
-      (outline (path signal 120  680 -860  4400 -860))
-      (outline (path signal 120  680 860  4400 860))
-      (outline (path signal 100  5080 0  4340 0))
-      (outline (path signal 100  0 0  740 0))
-      (outline (path signal 100  4340 800  740 800))
-      (outline (path signal 100  4340 -800  4340 800))
-      (outline (path signal 100  740 -800  4340 -800))
-      (outline (path signal 100  740 800  740 -800))
-      (pin Oval[A]Pad_1400x1400_um 2 5080 0)
-      (pin Round[A]Pad_1400_um 1 0 0)
+    (image Resistors_SMD:R_0603_HandSoldering
+      (outline (path signal 50  1950 -700  -1960 -700))
+      (outline (path signal 50  1950 -700  1950 700))
+      (outline (path signal 50  -1960 700  -1960 -700))
+      (outline (path signal 50  -1960 700  1950 700))
+      (outline (path signal 120  -500 680  500 680))
+      (outline (path signal 120  500 -680  -500 -680))
+      (outline (path signal 100  -800 400  800 400))
+      (outline (path signal 100  800 400  800 -400))
+      (outline (path signal 100  800 -400  -800 -400))
+      (outline (path signal 100  -800 -400  -800 400))
+      (pin Rect[T]Pad_1200x900_um 2 1100 0)
+      (pin Rect[T]Pad_1200x900_um 1 -1100 0)
     )
     (image Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm
       (outline (path signal 50  1800 1800  -1800 1800))
@@ -118,6 +98,8 @@
       (pin Oval[A]Pad_1700x1700_um 3 0 -5080)
       (pin Oval[A]Pad_1700x1700_um 2 0 -2540)
       (pin Rect[A]Pad_1700x1700_um 1 0 0)
+    )
+    (image "Symbols:OSHW-Logo2_7.3x6mm_SilkScreen"
     )
     (image Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm::1
       (outline (path signal 100  -1270 1270  -1270 -8890))
@@ -311,27 +293,6 @@
       (keepout "" (circle F.Cu 1200 2300 -1300))
       (keepout "" (circle B.Cu 1200 2300 -1300))
     )
-    (image Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal
-      (outline (path signal 100  740 800  740 -800))
-      (outline (path signal 100  740 -800  4340 -800))
-      (outline (path signal 100  4340 -800  4340 800))
-      (outline (path signal 100  4340 800  740 800))
-      (outline (path signal 100  0 0  740 0))
-      (outline (path signal 100  5080 0  4340 0))
-      (outline (path signal 120  620 920  4460 920))
-      (outline (path signal 120  620 -920  4460 -920))
-      (outline (path signal 50  -950 1200  -950 -1200))
-      (outline (path signal 50  -950 -1200  6050 -1200))
-      (outline (path signal 50  6050 -1200  6050 1200))
-      (outline (path signal 50  6050 1200  -950 1200))
-      (pin Round[A]Pad_1400_um 1 0 0)
-      (pin Oval[A]Pad_1400x1400_um 2 5080 0)
-    )
-    (padstack Round[A]Pad_1400_um
-      (shape (circle F.Cu 1400))
-      (shape (circle B.Cu 1400))
-      (attach off)
-    )
     (padstack Round[A]Pad_1750_um
       (shape (circle F.Cu 1750))
       (shape (circle B.Cu 1750))
@@ -347,11 +308,6 @@
       (shape (path B.Cu 1400  -300 0  300 0))
       (attach off)
     )
-    (padstack Oval[A]Pad_1400x1400_um
-      (shape (path F.Cu 1400  0 0  0 0))
-      (shape (path B.Cu 1400  0 0  0 0))
-      (attach off)
-    )
     (padstack Oval[A]Pad_1700x1700_um
       (shape (path F.Cu 1700  0 0  0 0))
       (shape (path B.Cu 1700  0 0  0 0))
@@ -360,6 +316,10 @@
     (padstack Rect[A]Pad_2000x1400_um
       (shape (rect F.Cu -1000 -700 1000 700))
       (shape (rect B.Cu -1000 -700 1000 700))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1200x900_um
+      (shape (rect F.Cu -600 -450 600 450))
       (attach off)
     )
     (padstack Rect[A]Pad_1700x1700_um
@@ -375,7 +335,7 @@
   )
   (network
     (net A0
-      (pins R3-2 R2-1 J1-2 J1-1)
+      (pins J1-2 J1-1 Analog1-2)
     )
     (net EDS
       (pins J1-8 J1-7)
@@ -396,11 +356,11 @@
       (pins J1-18 J1-17)
     )
     (net GND
-      (pins R3-1 SHT21-3 OLED1-2 MPU6050-3 J2-13 J2-14 J2-27 J2-28 J1-28 J1-27 J1-20
-        J1-19 SW1-1 Analog1-3 1wire2-3 1wire1-3)
+      (pins Temperature1-3 OLED1-2 MPU6050-3 J2-13 J2-14 J2-27 J2-28 J1-28 J1-27 J1-20
+        J1-19 SW1-1 1wire2-3 1wire1-3)
     )
     (net 3V3
-      (pins SHT21-4 OLED1-1 MPU6050-4 J2-11 J2-12 J2-29 J2-30 J1-22 J1-21 Analog1-1)
+      (pins Temperature1-4 OLED1-1 MPU6050-4 J2-11 J2-12 J2-29 J2-30 J1-22 J1-21 Analog1-1)
     )
     (net EN
       (pins J1-24 J1-23)
@@ -421,10 +381,10 @@
       (pins J2-21 J2-22)
     )
     (net D7
-      (pins J2-19 J2-20 1wire2-1 1wire1-1 R1-2)
+      (pins R1-2 J2-19 J2-20 1wire2-1 1wire1-1)
     )
     (net D6
-      (pins J2-17 J2-18 1wire2-2 1wire1-2 R1-1)
+      (pins R1-1 J2-17 J2-18 1wire2-2 1wire1-2)
     )
     (net D5
       (pins J2-15 J2-16 SW1-2)
@@ -436,10 +396,10 @@
       (pins J2-7 J2-8)
     )
     (net D2
-      (pins SHT21-1 OLED1-4 MPU6050-1 J2-5 J2-6)
+      (pins Temperature1-1 OLED1-4 MPU6050-1 J2-5 J2-6)
     )
     (net D1
-      (pins SHT21-2 OLED1-3 MPU6050-2 J2-3 J2-4)
+      (pins Temperature1-2 OLED1-3 MPU6050-2 J2-3 J2-4)
     )
     (net D0
       (pins J2-1 J2-2)
@@ -450,11 +410,11 @@
     (net RSV2
       (pins J1-6 J1-5)
     )
-    (net "Net-(Analog1-Pad2)"
-      (pins R2-2 Analog1-2)
+    (net "Net-(Analog1-Pad3)"
+      (pins Analog1-3)
     )
-    (class kicad_default "" A0 CLK CMD D0 D1 D2 D3 D4 D5 D8 EDS EN "Net-(Analog1-Pad1)"
-      "Net-(Analog1-Pad2)" RST RSV1 RSV2 RX SD0 SD1 SD2 TX
+    (class kicad_default "" A0 CLK CMD D0 D1 D2 D3 D4 D5 D8 EDS EN "Net-(Analog1-Pad3)"
+      RST RSV1 RSV2 RX SD0 SD1 SD2 TX
       (circuit
         (use_via Via[0-1]_800:400_um)
       )
